@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import '@fortawesome/fontawesome-free/css/all.css';
 
 
 
@@ -13,7 +14,18 @@ export default function Home() {
       </Head>
       <main>
       <h1>Safe Space</h1>
-      
+    <form className="my-form">
+      <div className="input-wrapper">
+        <label htmlFor="start">Start:</label>
+        <input type="text" id="start" name="start" />
+      </div>
+
+      <div className="input-wrapper">
+        <label htmlFor="end">End:</label>
+        <input type="text" id="end" name="end" />
+      </div>
+    </form>
+
       </main>
     </>
   )
