@@ -1,14 +1,18 @@
 import Head from 'next/head'
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+
 
 export default function Home() {
   const [origin, setOrigin] = useState('')
   const [destination, setDestination] = useState('')
+  const router = useRouter();
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(`Origin: ${origin}, Destination: ${destination}`);
+    event.preventDefault()
+    router.push('/map');
   };
+  
 
   return (
     <>
@@ -24,7 +28,7 @@ export default function Home() {
           <div className="input-wrapper">
                 <span className="fas fa-search"></span>
             <label htmlFor="start"></label>
-            <input type="text" value={origin} onChange={(event) => setOrigin(event.target.value)} id="start" name="start" placeholder='Your location' />
+            <input type="text" id="start" name="start" placeholder='Your location' />
           </div>
 
           <div className="input-wrapper">
