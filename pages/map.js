@@ -6,9 +6,21 @@ const MyPage = () => {
     <div style={{ display: 'flex', alignItems: 'center' }}>
       <div style={{ flex: 1, padding: '2rem' }}>
         <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '2rem' }}>These are your safest options!</h1>
-        <p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>Welcome to our walking route planner! Our map below shows you the three best routes for your journey. We've analysed pedestrian traffic data and factored in the time of day to provide you with the most efficient and enjoyable routes. Choose the route that works best for you and take in the sights and sounds of the city on foot! Don't forget to wear comfortable shoes and stay hydrated.
+        <p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>
+        Our map below shows you the three best routes for your journey. We've analysed pedestrian traffic data and factored in the time of day to provide you with the most efficient and enjoyable routes.
+        </p><p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}> <strong>  The red-amber-green color code is here as a guidance. 
+         Choose the route that works best for you and stay safe. Hoover over the route you want and find out more about the score. 
+         </strong> </p><p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>Don't forget to wear comfortable shoes and stay hydrated.
+        </p><p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>Included information: 
         </p>
-
+        <ul style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>
+          <li>locals insights! (scroll down)</li>
+          <li>street lights (more is better!)</li>
+          <li>shops opening times (according to gmaps)</li>
+          <li>traffic and footfall (again gmaps)</li>
+          <li>cameras</li>
+          <li>residential</li>
+          </ul>
       </div>
       <div style={{ flex: 1 }}>
         <img src="/routsadded2.png" alt="My Image" style={{ maxWidth: '100%' }} />
