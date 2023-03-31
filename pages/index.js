@@ -22,11 +22,13 @@ export default function Home() {
         <h1>Safe Space</h1>
         <form onSubmit={handleSubmit} className="my-form">
           <div className="input-wrapper">
+                <span className="fas fa-search"></span>
             <label htmlFor="start"></label>
             <input type="text" value={origin} onChange={(event) => setOrigin(event.target.value)} id="start" name="start" placeholder='Your location' />
           </div>
 
           <div className="input-wrapper">
+                <span className="fas fa-search"></span>
             <label htmlFor="end"></label>
             <input type="text" id="end" name="end" placeholder='Where to?' />
           </div>
