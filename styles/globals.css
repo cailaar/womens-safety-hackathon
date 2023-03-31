@@ -22,3 +22,24 @@ input {
   width: 100%;
   max-width: 400px;
 }
+
+body {
+  background-color: #d0f1eb;
+}
+
+h1 {
+  color: #0B4F6C;
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+button {
+  background-color: #0B4F6C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+}

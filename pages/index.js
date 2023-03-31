@@ -13,14 +13,15 @@ export default function Home() {
       <h1>Safe Space</h1>
     <form className="my-form">
       <div className="input-wrapper">
-        <label htmlFor="start">Start:</label>
+        <label htmlFor="start">Where are you?</label>
         <input type="text" id="start" name="start" />
       </div>
 
       <div className="input-wrapper">
-        <label htmlFor="end">End:</label>
+        <label htmlFor="end">Where do you want to go to?</label>
         <input type="text" id="end" name="end" />
       </div>
+      <button>Get route</button>
     </form>
 
       </main>
